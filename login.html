@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>아이디입력</form>
+    <input type ="text" name = "id" id="id" maxlength="20" placeholder="아이디를 입력하세요"/>
+</br>
+<form>비밀번호입력</form>
+<input type ="password" name = "pwd" id="pwd" maxlength="20" placeholder="비밀번호를 입력하세요"/>
+</br>
+    <p>
+       <h1> 아래 버튼을 눌러 보이는 번호를 입력해주세요</h1>
+    </p>
+    <input type="button" value="랜덤번호받기" onclick="refresh()"/>
+    <p> <strong id="auth">00000</strong></p>
+    <input type="button" id="btn1" value="제출"/>
+    <input type="button" id="btn2" value="취소"/>
+    <script>
+       
+        window.onload = function() {
+            function random(n1,n2) {
+                return parseInt(Math.random() *(n2-n1+1)) +n1;
+            }
+            let auth="";
+            for(let i=0; i<6; i++) {
+                auth+=random(0,9);
+            }
+            document.getElementById('auth').innerHTML=auth;
+        }
+        function refresh() {
+            location.reload();
+        }
+        let t1 = document.getElementById('btn1');
+        let t2 = document.getElementById('btn2');
+        t1.addEventListener('click' , btn_listener);
+        t2.addEventListener('click' , btn_listener);
+        function btn_listener(event) {
+            let click = event.target.id;
+            if(click=='btn1'){
+                alert('입력성공');
+                let t1 = document.getElementById('btn1');
+            }else if(click=='btn2'){
+                alert('다시 입력해주세요');
+            }
+            let t2 = document.getElementById('btn2');
+        }
+    </script>
+    
+</body>
+</html>
