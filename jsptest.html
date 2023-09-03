@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 이력서</title>
+    <link rel="stylesheet" href="jsptest.css">
+    
+</head>
+<body>
+    
+    <div class="resumeHeader">
+        <div class="container">
+            <a href="https://www.saramin.co.kr/zf_user/" class="logo linkLogo"> 
+                <!-- 로고클릭 시메인페이지 이동-->
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5575%2F2021%2F10%2F26%2F0000240596_001_20211026080003057.jpg&type=sc960_832" width="200px; "height=80px; alt="JOBKOREA">
+            </a>
+            </div>
+            </div>
+    <!-- 이력서 상단 부분 -->
+    <div class="top">
+        <h1 class="username">테스트(로그인시 유저정보 바로나오게)</h1><br/>
+        <h3><p class="txt">내 이력서를 작성해보세요!</p></h3>
+        <ul class="userinfo">
+            
+        <li class="user_email">이메일(로그인시 유저정보 바로나오게)</li>
+        <li class="user_phone">전화번호(로그인시 유저정보 바로나오게)</li>
+        <li class="user_addr">주소를(로그인시 유저정보 바로나오게)</li>
+        </ul>
+        <div class="career">
+            <fieldset>
+            <label for="careerCd" class="blind">경력구분</label>
+            <select name="career_cd" id="careerCd">
+                <option value="1" selected="selected">신입</option>
+                <option value="2">경력</option>
+            </select>
+        </fieldset>
+        <!-- 우측박스 추가-->
+        <div class="resume_snb">
+            <div class="snb_container">
+<div class="snb_box">
+                <div class="snb_top">
+            <h3 class="tit">이력서 완성하기</h3>
+        </div>
+        <p class="txt"><em>기본정보</em>만 입력하면<br>이력서가 완성돼요!</p>
+            <ul class="item_list">
+                <li class="item active">
+                    <a href="#mycareer" class="BtnType con_link">내 경력</a>
+            </li>
+             <li class="item essential">
+                <a href="#school_end" class="BtnType con_link">학력</a>
+            </li>
+                <li class="item">
+                 <a href="#career_now" class="BtnType con_link">경력</a>               
+            </li>
+                <li class="item add">
+                <a href="#skill" class="BtnType con_link">기술</a>
+                </li>
+                <li class="self_int">
+                    <a href="#skill" class="BtnType con_link">자기소개서</a>
+                 </li>
+            </ul>
+</div>
+    </div>
+        </div>
+            </div>
+        </div>
+        <!--경력 -->
+        <fieldset>
+            <div class="box">
+                <div id="mycareer" class="content-section"></div>
+                <h2 class="mycareer">MY Career</h2>
+                <div class="contents_edit">
+                <ul class="resume_tit">
+                    <li class="list">
+                        <h3 class="tit">백엔드/서버개발</h3>
+                        <p class="desc">백엔드개발</p>
+                    </div>
+                    </li>
+                </ul>
+                <textarea height="106px" width="30%" maxlength="200" name="spellingText" id="spellingText" class="Textarea_textarea__JXfUb Textarea_resize-none__tEySw" placeholder="추가 경력을 입력해주세요" style="height: 56px; min-height: 56px;"></textarea>
+                <button type="button" class="editButton">추가/수정하기</button>
+            </div>
+        </div>
+    </fieldset> 
+    </div>
+    <!-- 학력 정보 부분 -->
+    <fieldset>
+    <div class="resume_tit">
+        <div class="box_tit">
+            <div id="school_end" class="content-section"></div>
+            <h2 class="school">학력<span class="must"></span></h2>
+            <ul class="list">
+                <li class="list">
+                    <div class="contents">
+                        <h3 class="tit">
+                            <span>서울대학교</span>
+                            (4년제)
+                            <span class="state">(졸업)</span>
+                        </h3>
+                        <h3>컴퓨터공학과</h3>
+                        <p class="desc"></p>
+                        <label for="careerCd" class="blind">주/야간 선택</label>
+                        <select name="career_cd" id="careerCd">
+                            <option value="1" selected="selected">주간</option>
+                            <option value="2">야간</option>
+                        </select>
+                    </div>
+                    <div class="edit">
+                    </div>
+                    <textarea height="156px" width="50%" maxlength="500" name="spellingText" id="spellingText" class="Textarea_textarea__JXfUb Textarea_resize-none__tEySw" placeholder="추가 학력을 입력해 주세요." style="height: 56px; min-height: 56px;"></textarea>
+                </fieldset>
+                </li>
+            </ul>
+            <input type="hidden" id="school" value="userschool">
+        
+        </div>
+    </div>
+    <fieldset>
+    <div class="box">
+        <div id="career_now" class="content-section"></div>
+        <h2 class="career">경력</h2>
+        <textarea height="156px" width="50%" maxlength="500" name="spellingText" id="spellingText" class="Textarea_textarea__JXfUb Textarea_resize-none__tEySw" placeholder="경력을 입력해 주세요." style="height: 56px; min-height: 56px;"></textarea>
+    </fieldset>
+    </div>
+      <fieldset>
+        <div id="skill" class="content-section"></div>
+       <h2> 나의 기술</h2>
+        <span class="skil">java</span>
+        <span class="skil">Spring Boot</span>
+        <span class="skil">jsp</span>
+    </fieldset>
+      <!-- 이력서 하단 부분 -->
+      <fieldset>
+        <h2>자기소개서</h2>
+        <div id="self_int" class="content-section"></div>
+      <textarea height="156px" width="50%" maxlength="500" name="spellingText" id="spellingText" class="Textarea_textarea__JXfUb Textarea_resize-none__tEySw" placeholder="자기소개서를 입력해 주세요.(최소 20자 필수)" style="height: 156px; min-height: 56px;"></textarea>
+    </fieldset>
+    <body>
+        <div class="resume_btm">
+            <section id="resume_title">
+                <div class="inner">
+                    <button type="button" class="submit">제출하기</button>
+                </div>
+            </section>
+        </div>
+        <script>
+            // 링크 클릭 시 스크롤 처리
+            document.querySelectorAll('a.BtnType.con_link').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

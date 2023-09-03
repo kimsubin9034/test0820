@@ -1,0 +1,91 @@
+.skill {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #6799FF;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center; /* 가운데 정렬 추가 */
+    }
+    
+    button:hover {
+    background-color: #0056b3;
+    }
+    
+    button {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center; /* 가운데 정렬 추가 */
+    }
+    .resume_snb {
+        position: relative;
+        width: 294px
+    }
+    .resume_snb .snb_box {
+        padding: 24px 16px 24px;
+        width: 294px;
+        border-radius: 80px;
+        box-sizing: border-box;
+        background: #fff;
+        box-shadow: 0 4px 16px rgba(21, 39, 111, 0.08)
+    }
+    .resume_snb .snb_box .snb_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+    .resume_snb .snb_box .progress_bar:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        border-radius: 100px;
+        background: linear-gradient(270deg, #5189fa 0%, #bcd1fc 100%);
+        transition: transform 0.5s ease;
+        transform-origin: left center;
+        content: ""
+    }
+    .resume_snb {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 300px; /* 원하는 너비 조정 */
+        background-color: #fff; /* 배경색상 설정 */
+        border-left: 1px solid #ccc; /* 왼쪽에 경계선 추가 */
+        z-index: 1000; /* 다른 콘텐츠 위에 나타나도록 설정 (조절 가능) */
+        overflow-y: auto; /* 내용이 넘칠 경우 스크롤 가능하도록 설정 */
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 (선택사항) */
+    }
+
+    .snb_container {
+        padding: 20px;
+    }
+    
+    /* 이력서 완성도 상자 스타일 */
+    .snb_box {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .dbkCyl {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 10;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        border-bottom: 1px solid rgb(228, 228, 228);
+    }
+    
